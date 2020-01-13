@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animation 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#box1").hover(function(){
+            $("#box1").animate({
+                marginLeft: '1810px';
+                });
+            $("#box1").animate({
+                marginTop: '400px'
+                });
+            $("#box1").animate({
+                marginTop: '200px'
+                });
+          });
+        });
+    </script>
+  </head>
+  <body>
+    <div id="box1" style="display:block;height:100px;width:100px;background-color:cyan;"></div>
+
+  </body>
+</html>
