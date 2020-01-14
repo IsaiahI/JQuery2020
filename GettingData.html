@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gettting Data from HTML</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          alert("text: " + $("#text1").text());
+        });
+      $("#btn2").click(function(){
+        alert("markup: " + $("#text1").html());
+      });
+      $("#btn3").click(function(){
+        //alert("stuff: " + $("#inText").val());
+        var inText1 = $("#inText1").val();
+        var inText2 = $("#inText2").val();
+        if(inText1 == "use" && inText2 == "soap"){
+          alert("please do!");
+        }else{
+          alert("i wish you would use soap")
+        }
+      });
+  });
+    </script>
+  </head>
+  <body>
+    <p id="text1">this is some <i>italicized</i> text.</p>
+    <button type="button" id="btn1">show text</button>
+    <button type="button" id="btn2">show markup</button><br>
+    Type use: <input type="text" id="inText1"><br>
+    Type soap: <input type="text" id="inText2"><br>
+    <button type="button" id="btn3">submit</button>
+  </body>
+</html>
